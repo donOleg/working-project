@@ -111,6 +111,21 @@ $(document).ready(function() {
 	});
 	/*** Slide end ***/
 
+	/*** Tabs ***/
+	$('.js-tab-link').click(function(){
+		$(this).parents('.js-tabs-wrap').find('.tabs-cont').addClass('tabs-cont_hide');
+		$(this).parent().siblings().removeClass('active');
+		var s = $(this).attr("href");
+		return (
+			$(s).removeClass("tabs-cont_hide"),
+			$(this)
+			.parent()
+			.addClass("active"),
+			!1
+		);
+	});
+	/*** Tabs end ***/
+
 });
 
 
