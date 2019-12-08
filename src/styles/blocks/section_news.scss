@@ -54,6 +54,10 @@
   bottom: 25px;
   left: 0;
   padding: 0 25px;
+
+  @include phones {
+    padding: 0 10px;
+  }
 }
 
 .news_head {

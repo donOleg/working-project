@@ -9,7 +9,7 @@
 .product_content {
   width: calc(100% - 350px);
   margin-bottom: 70px;
-  padding-right: 17%;
+  // padding-right: 17%;
 
   @include desktop_middle {
     width: 100%;
