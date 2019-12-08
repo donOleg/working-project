@@ -1,0 +1,101 @@
+extends ../main-layout
+
+block title
+	| Контакты
+
+block content
+	section
+		.container_inner
+			.about_wrap
+				.about_head
+					.page_head
+						h2 Контакты
+				.contact_content
+					.contact_address
+						.contact_address_box
+							.contact_address_row
+								.contact_address_name
+									p Адрес:
+								.contact_address_date
+									p 612830, Кировская область, поселок городского типа Рудничный, ул. Комсомольская, д.2
+						.contact_address_box
+							.contact_address_row
+								.contact_address_name
+									p Директор:
+								.contact_address_date
+									p Гуров Дмитрий Борисович
+							.contact_address_row
+								.contact_address_name
+									p Телефон:
+								.contact_address_date
+									a(href="tel:+7(916)-620-12-28") +7 (916)-620-12-28
+						.contact_address_box
+							.contact_address_row
+								.contact_address_name
+									p Коммерческий директор:
+								.contact_address_date
+									p Торская Анна Григорьевна
+							.contact_address_row
+								.contact_address_name
+									p Телефон:
+								.contact_address_date
+									a(href="tel:+7(916)-795-57-53") +7 (916)-795-57-53
+							.contact_address_row
+								.contact_address_name
+									p E-mail:
+								.contact_address_date
+									a(href="mailto:vku@cheminvest.org") vku@cheminvest.org
+
+					.contact_map
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2017.8833496917248!2d52.457696416201564!3d59.61830339486084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43fa80cbdf8fe5bf%3A0x27330a17b445b2fb!2z0JrQvtC80YHQvtC80L7Qu9GM0YHQutCw0Y8g0YPQuy4sIDIsINCg0YPQtNC90LjRh9C90YvQuSwg0JrQuNGA0L7QstGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjywgNjEyODMw!5e0!3m2!1sru!2sua!4v1575570957424!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+					.info_desc
+						.info_desc_item
+							.contact_info_head
+								p Уполномоченные дилеры на территории России:
+							ul.contact_info_list
+								li.contact_info_item ООО «Объединенная фосфоритная компания»
+								li.contact_info_item Территория: все субъекты РФ за исключением Кировской обл. и территорий других уполномоченных дилеров
+								li.contact_info_item Директор: Бакулин Петр Евгеньевич
+								li.contact_info_item Тел./факс: +7-833-265-32-84, +7-912-720-3024
+						.info_desc_item
+							.contact_info_head
+								p Представитель по Свердловской области:
+							ul.contact_info_list
+								li.contact_info_item Олейник Виталий Степанович
+								li.contact_info_item Территория: Свердловская область и Уральский федеральный округ
+								li.contact_info_item Тел. +7-912-205-02-23
+								li.contact_info_item e-mail: ​oleynikvs@mail.ru
+						.info_desc_item
+							.contact_info_head
+								p Представитель по Пермскому краю:
+							ul.contact_info_list
+								li.contact_info_item ООО «Терминал-Лысьва»
+								li.contact_info_item Территория: Пермский край
+								li.contact_info_item г.Кунгур, ул. Русское поле
+								li.contact_info_item Тел.: +7 (342) 205-81-49
+								li.contact_info_item e-mail: tlsv@tlsv.su
+						.info_desc_item
+							.contact_info_head
+								p Уполномоченные дилеры за пределами России:
+							ul.contact_info_list
+								li.contact_info_item ЗАО «Агропромышленная компания «Беста»
+								li.contact_info_item Территория: Украина
+								li.contact_info_item Украина, 03048, г. Киев, ул. Кадетский Гай, 6/1
+								li.contact_info_item Генеральный директор: Карпенко О.П.
+								li.contact_info_item Тел. +38-044-332-669
+
+					.main_contacts
+						h2.mod_w Свяжитесь с нами
+						form
+							.form_field
+								input(type="text" placeholder="Ваше Имя").form_input
+							.form_field
+								input(type="tel" placeholder="Ваш телефон").form_input
+							.form_field
+								input(type="email" placeholder="Ваше E-mail").form_input
+							.form_field
+								.checkbox_wrap
+									input(type="checkbox")#checkPrivacy.form_checkbox.styled
+									label(for="checkPrivacy").form_label Я соглашаюсь с политикой конфиденциальности
+								button.form_submit(type="submit") Отправить

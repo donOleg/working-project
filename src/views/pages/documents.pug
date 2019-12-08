@@ -1,0 +1,76 @@
+extends ../main-layout
+
+block title
+	| Документы
+
+block content
+	section
+		.container_inner
+			.page_head
+				h2 Документы
+			.documents_list
+				.documents_item
+					.documents_icon
+						img(src="img/file_icon.svg", alt="")
+					.documents_text
+						p Приложение 2-1 свидетельство о регистрации агрохимиката в России
+					.documents_button
+						input(type="file" name="file" id="file").input_file
+						label(for="file") PDF
+				.documents_item
+					.documents_icon
+						img(src="img/file_icon.svg", alt="")
+					.documents_text
+						p Приложение 3-1 Декларация соответствия
+					.documents_button
+						input(type="file" name="file" id="file").input_file
+						label(for="file") PDF
+				.documents_item
+					.documents_icon
+						img(src="img/file_icon.svg", alt="")
+					.documents_text
+						p Приложение 6 Характеристики агрохимиката
+					.documents_button
+						input(type="file" name="file" id="file").input_file
+						label(for="file") PDF
+				.documents_item
+					.documents_icon
+						img(src="img/file_icon.svg", alt="")
+					.documents_text
+						p Приложение 3-2 Сертификат качества
+					.documents_button
+						input(type="file" name="file" id="file").input_file
+						label(for="file") PDF
+				.documents_item
+					.documents_icon
+						img(src="img/file_icon.svg", alt="")
+					.documents_text
+						p Приложение 7 Сведения об агрохимикате
+					.documents_button
+						input(type="file" name="file" id="file").input_file
+						label(for="file") PDF
+				.documents_item
+					.documents_icon
+						img(src="img/file_icon.svg", alt="")
+					.documents_text
+						p Приложение 8 Протокол химического состава
+					.documents_button
+						input(type="file" name="file" id="file").input_file
+						label(for="file") PDF
+				.documents_item
+					.documents_icon
+						img(src="img/file_icon.svg", alt="")
+					.documents_text
+						p Приложение 3-2 Сертификат качества
+					.documents_button
+						input(type="file" name="file" id="file").input_file
+						label(for="file") PDF
+
+			nav(aria-label="Page navigation example")
+				ul.pagination
+					li.page-item
+						a(href="#").page-link.active 1
+					li.page-item
+						a(href="#").page-link ...
+					li.page-item
+						a(href="#").page-link 3

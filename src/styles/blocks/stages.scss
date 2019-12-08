@@ -1,0 +1,218 @@
+.hexagon_wrapper {
+  width: 1625px;
+  margin: 0 auto;
+}
+
+.hexagon {
+  position: relative;
+  width: 389px;
+  height: 346px;
+}
+
+.hexagon_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hexagon_row_s {
+  width: 1010px;
+  margin: 0 auto;
+}
+
+.hexagon_row_up {
+  position: relative;
+  margin-top: -145px;
+}
+
+.hexagon_row_single {
+  justify-content: center;
+}
+
+.hexagon_foto {
+  width: 100%;
+}
+
+.hexagon_inner {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 23px;
+  }
+}
+
+.hex_small {
+  position: absolute;
+  width: 101px;
+  height: 89px;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+
+.hexagon_nubmer {
+  position: absolute;
+  width: 180px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 20px 0;
+  border-top: 3px solid #fff;
+
+  p {
+    font-size: 51px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+.hexagon_one {
+  margin-right: 233px;
+
+  .hex_small {
+    left: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    &:before {
+      background-image: url("../img/stage_icon01.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .hexagon_inner {
+    left: 120px;
+    padding-right: 30px;
+  }
+}
+
+.hexagon_two {
+  .hex_small {
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    &:before {
+      background-image: url("../img/stage_icon02.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .hexagon_inner {
+    left: 30px;
+    padding-right: 120px;
+  }
+}
+
+.hexagon_three {
+  margin-right: 233px;
+
+  .hex_small {
+    right: 76px;
+    top: 12px;
+
+    &:before {
+      background-image: url("../img/stage_icon03.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .hexagon_inner {
+    padding: 0 50px;
+  }
+}
+
+.hexagon_four {
+  .hex_small {
+    top: 12px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    &:before {
+      background-image: url("../img/stage_icon04.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .hexagon_inner {
+    padding: 0 28px;
+    padding-top: 20px;
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+    }
+  }
+}
+
+.hexagon_five {
+  .hex_small {
+    top: 12px;
+    left: 76px;
+
+    &:before {
+      background-image: url("../img/stage_icon05.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .hexagon_inner {
+    padding: 0 50px;
+  }
+}
+
+.hexagon_six {
+  .hex_small {
+    left: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    &:before {
+      background-image: url("../img/stage_icon06.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .hexagon_inner {
+    left: 120px;
+    padding-right: 30px;
+  }
+}
+
+.hexagon_seven {
+  .hex_small {
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    &:before {
+      background-image: url("../img/stage_icon07.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .hexagon_inner {
+    left: 30px;
+    padding-right: 120px;
+  }
+}

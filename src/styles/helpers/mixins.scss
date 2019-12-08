@@ -1,0 +1,91 @@
+@mixin centered($axis: 'both') {
+	position: absolute;
+
+	@if $axis == 'both' {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	@if $axis == 'x' {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	@if $axis == 'y' {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin border_radius($radius) {
+	border-radius: $radius;
+}
+
+@mixin desktop_max() {
+	@media screen and (max-width: 1700px) {
+		@content;
+	}
+}
+
+@mixin desktop_lg() {
+	@media screen and (max-width: 1600px) {
+		@content;
+	}
+}
+
+@mixin desktop_middle() {
+	@media screen and (max-width: 1350px) {
+		@content;
+	}
+}
+
+@mixin desktop_sm() {
+	@media screen and (max-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin desktop_mini() {
+	@media screen and (max-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin desktop_s() {
+	@media screen and (max-width: 992px) {
+		@content;
+	}
+}
+
+@mixin tablets() {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin tablets_s() {
+	@media screen and (max-width: 620px) {
+		@content;
+	}
+}
+
+@mixin phones_lg() {
+	@media screen and (max-width: 576px) {
+		@content;
+	}
+}
+
+@mixin phones() {
+	@media screen and (max-width: 480px) {
+		@content;
+	}
+}
