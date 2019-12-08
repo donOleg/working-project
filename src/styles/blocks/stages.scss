@@ -1,12 +1,52 @@
+.stage_box {
+  @include tablets {
+    display: none;
+  }
+}
+
 .hexagon_wrapper {
   width: 1625px;
   margin: 0 auto;
+
+  @include desktop_max {
+    width: 1540px;
+  }
+
+  @include desktop_lg {
+    width: 1300px;
+  }
+
+  @include desktop_middle {
+    width: 1100px;
+  }
+
+  @include desktop_sm {
+    width: 950px;
+  }
+
+  @include desktop_s {
+    width: 740px;
+  }
+
+  @include tablets {
+    width: 100%;
+  }
 }
 
 .hexagon {
   position: relative;
   width: 389px;
   height: 346px;
+
+  @include desktop_max {
+    width: 377px;
+    height: 336px;
+  }
+
+  @include desktop_lg {
+    width: 330px;
+    height: 294px;
+  }
 }
 
 .hexagon_row {
@@ -18,11 +58,35 @@
 .hexagon_row_s {
   width: 1010px;
   margin: 0 auto;
+
+  @include desktop_max {
+    width: 960px;
+  }
+
+  @include desktop_lg {
+    width: 815px;
+  }
+
+  @include desktop_sm {
+    width: 750px;
+  }
+
+  @include desktop_s {
+    width: 670px;
+  }
 }
 
 .hexagon_row_up {
   position: relative;
   margin-top: -145px;
+
+  @include desktop_lg {
+    margin-top: -105px;
+  }
+
+  @include desktop_middle {
+    margin-top: 10px;
+  }
 }
 
 .hexagon_row_single {
@@ -43,6 +107,11 @@
     color: #fff;
     font-weight: 700;
     line-height: 23px;
+
+    @include desktop_lg {
+      font-size: 15px;
+      line-height: 21px;
+    }
   }
 }
 
@@ -51,6 +120,11 @@
   width: 101px;
   height: 89px;
 
+  @include desktop_lg {
+    width: 70px;
+    height: 62px;
+  }
+
   &:before {
     position: absolute;
     content: "";
@@ -58,6 +132,14 @@
     height: 100%;
     left: 0;
     top: 0;
+
+    @include desktop_lg {
+      background-size: 55%;
+    }
+  }
+
+  img {
+    width: 100%;
   }
 }
 
@@ -70,16 +152,23 @@
   padding: 20px 0;
   border-top: 3px solid #fff;
 
+  @include desktop_lg {
+    padding: 5px 0;
+  }
+
   p {
     font-size: 51px;
     color: #fff;
     font-weight: 600;
     text-align: center;
+
+    @include desktop_lg {
+      font-size: 35px;
+    }
   }
 }
 
 .hexagon_one {
-  margin-right: 233px;
 
   .hex_small {
     left: 10px;
@@ -96,6 +185,10 @@
   .hexagon_inner {
     left: 120px;
     padding-right: 30px;
+
+    @include desktop_lg {
+      left: 95px;
+    }
   }
 }
 
@@ -119,7 +212,6 @@
 }
 
 .hexagon_three {
-  margin-right: 233px;
 
   .hex_small {
     right: 76px;
@@ -195,6 +287,10 @@
   .hexagon_inner {
     left: 120px;
     padding-right: 30px;
+
+    @include desktop_lg {
+      left: 95px;
+    }
   }
 }
 
@@ -214,5 +310,21 @@
   .hexagon_inner {
     left: 30px;
     padding-right: 120px;
+  }
+}
+
+.hexagon_center {
+  width: 257px;
+
+  @include desktop_middle {
+    width: 200px;
+  }
+
+  @include desktop_s {
+    display: none;
+  }
+
+  img {
+    width: 100%;
   }
 }

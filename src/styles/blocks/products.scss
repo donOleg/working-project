@@ -1,11 +1,24 @@
 .product_head {
   width: 350px;
+
+  @include desktop_middle {
+    width: 100%;
+  }
 }
 
 .product_content {
   width: calc(100% - 350px);
   margin-bottom: 70px;
   padding-right: 17%;
+
+  @include desktop_middle {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  @include tablets {
+    margin-bottom: 20px;
+  }
 }
 
 .product_content_text {
@@ -13,6 +26,13 @@
   -webkit-column-count: 2;
   column-count: 2;
   column-gap: 50px;
+
+  @include tablets_s {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+    column-gap: 0;
+  }
 
   p {
     margin-bottom: 20px;
@@ -25,8 +45,20 @@
   justify-content: space-between;
   align-items: center;
 
+  @include desktop_s {
+    flex-direction: column;
+  }
+
   &:not(:first-child) {
     margin-top: -50px;
+
+    @include desktop_middle {
+      margin-top: -30px;
+    }
+
+    @include desktop_s {
+      margin-top: 0;
+    }
   }
 }
 
@@ -34,6 +66,15 @@
   width: 48%;
   display: flex;
   align-items: center;
+
+  @include desktop_s {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .effect_title {
@@ -44,7 +85,17 @@
   height: 183px;
   flex: 0 0 auto;
   background-image: url("../img/hexagon_small.png");
+  background-repeat: no-repeat;
   background-size: contain;
+
+  @include desktop_middle {
+    width: 125px;
+    height: 139px;
+  }
+
+  @include phones {
+    margin-bottom: 10px;
+  }
 }
 
 .box_line {
@@ -52,6 +103,18 @@
   width: 230px;
   height: 6px;
   background-color: #369F45;
+
+  @include desktop_lg {
+    width: 125px;
+  }
+
+  @include desktop_middle {
+    width: 80px;
+  }
+
+  @include phones {
+    display: none;
+  }
 
   &:after {
     position: absolute;
@@ -69,8 +132,25 @@
   width: 320px;
   margin-left: 20px;
 
+  @include desktop_s {
+    width: 100%;
+  }
+
+  @include phones {
+    margin-left: 0;
+  }
+
   p {
     font-size: 18px;
+
+    @include desktop_middle {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    @include phones {
+      text-align: center;
+    }
   }
 }
 
@@ -88,6 +168,10 @@
 .tech_text {
   margin-bottom: 50px;
 
+  @include tablets {
+    margin-bottom: 20px;
+  }
+
   p {
     text-align: center;
   }
@@ -96,6 +180,10 @@
 .tech_tabs {
   display: flex;
   justify-content: space-between;
+
+  @include desktop_sm {
+    flex-direction: column;
+  }
 }
 
 .tech_tabs_list {
@@ -105,15 +193,40 @@
   align-items: center;
   padding: 20px 0;
   flex-wrap: wrap;
+
+  @include desktop_sm {
+    width: 100%;
+  }
 }
 
 .tech_tabs_cont {
   width: 62%;
+
+  @include desktop_sm {
+    width: 100%;
+  }
 }
 
 .tech_tabs_item {
   width: 48%;
   margin: 10px 0;
+
+  @include desktop_sm {
+    width: 24%;
+  }
+
+  @include tablets {
+    width: 32%;
+  }
+
+  @include tablets_s {
+    width: 49%;
+  }
+
+  @include phones {
+    width: 100%;
+    margin: 3px 0;
+  }
 
   &.active {
     .tech_tabs_link {
@@ -125,16 +238,23 @@
 }
 
 .tech_tabs_link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  height: 70px;
   font-size: 16px;
   color: #fff;
   font-weight: 700;
   line-height: 21px;
   text-align: center;
-  padding: 24px 5px;
+  padding: 5px;
   border: 4px solid #3B8545;
   background-color: #3B8545;
+
+  @include phones {
+    height: 50px;
+  }
 
   &:hover {
     color: #3B8545;
@@ -146,6 +266,14 @@
 .tech_tabs_cont_item {
   width: 100%;
   height: 500px;
+
+  @include tablets {
+    height: 360px;
+  }
+
+  @include phones {
+    height: 220px;
+  }
 
   img {
     width: 100%;
