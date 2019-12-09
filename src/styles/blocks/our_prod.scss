@@ -1,0 +1,34 @@
+.graphs_box {
+  width: 400px;
+}
+
+.graphs_wrap {
+  margin-bottom: 70px;
+}
+
+.graphs_list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.graphs_title {
+  margin-bottom: 30px;
+
+  p {
+    font-weight: 700;
+  }
+}
+
+.circle_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circles-text {
+  display: flex !important;
+  align-items: center !important;
+  font-size: 23px !important;
+  font-weight: 700;
+  padding: 0 87px !important;
+  line-height: 1.2 !important;
+}

@@ -65,7 +65,8 @@ gulp.task('cssMinfy', function(){
 		'node_modules/bootstrap/dist/css/bootstrap.min.css',
 		'node_modules/slick-carousel/slick/slick.css',
 		'node_modules/normalize.css/normalize.css',
-		'node_modules/jquery-form-styler/dist/jquery.formstyler.css'
+		'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
+		'node_modules/chart.js/dist/Chart.min.css'
 	])
 		.pipe(cssMin())
 		.pipe(gulp.dest('./dist/css/'));
@@ -89,7 +90,8 @@ gulp.task('js', function(){
 		'src/libs/*.js',
 		'node_modules/bootstrap/dist/js/bootstrap.min.js',
 		'node_modules/slick-carousel/slick/slick.min.js',
-		'node_modules/jquery-form-styler/dist/jquery.formstyler.js'
+		'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
+		'node_modules/chart.js/dist/Chart.min.js'
 	])
 		.pipe(concat('libs.js'))
 		.pipe(uglify())
