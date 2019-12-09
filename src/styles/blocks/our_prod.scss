@@ -9,6 +9,7 @@
 .graphs_list {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .graphs_title {
@@ -24,6 +25,10 @@
   justify-content: space-between;
 }
 
+.circles-wrp {
+  margin-bottom: 20px;
+}
+
 .circles-text {
   display: flex !important;
   align-items: center !important;
@@ -31,4 +36,58 @@
   font-weight: 700;
   padding: 0 87px !important;
   line-height: 1.2 !important;
+}
+
+.table_info_wrap {
+  @include tablets {
+    overflow-y: auto;
+    overflow: auto;
+  }
+}
+
+.table_info {
+  display: table;
+  width: 100%;
+
+  @include tablets {
+    min-width: 745px;
+  }
+}
+
+.table_info_row {
+  display: table-row;
+}
+
+.table_info_cell {
+  width: 25%;
+  display: table-cell;
+  padding: 20px 0;
+  border-bottom: 5px solid rgba(59, 133, 69, 0.2);
+  font-size: 18px;
+  line-height: 21px;
+
+  @include desktop_sm {
+    font-size: 16px;
+  }
+
+  @include desktop_s {
+    padding: 10px 0;
+  }
+
+  &:not(:first-child) {
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+.table_info_row_head {
+  .table_info_cell {
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: none;
+
+    @include desktop_sm {
+      font-size: 18px;
+    }
+  }
 }
