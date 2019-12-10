@@ -37,6 +37,7 @@
     "jquery": "^3.3.1",
     "jquery-form-styler": "^2.0.2",
     "normalize.css": "^8.0.1",
+    "scrollreveal": "^4.0.5",
     "slick-carousel": "^1.8.1"
   },
   "description": ""

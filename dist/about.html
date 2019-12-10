@@ -46,7 +46,7 @@
                   </ul>
                 </div>
               </div>
-              <button class="main_btn">Оставить заявку</button>
+              <button class="main_btn" data-toggle="modal" data-target="#orderCall">Оставить заявку</button>
             </div>
           </div>
         </header>
@@ -143,6 +143,38 @@
           </div>
         </div>
       </footer>
+      <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="orderCall">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-title"> Оставить заявку</div>
+              <button class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+            </div>
+            <div class="modal-body">
+              <div class="main_contacts">
+                <form>
+                  <div class="form_field">
+                    <input class="form_input" type="text" placeholder="Ваше Имя">
+                  </div>
+                  <div class="form_field">
+                    <input class="form_input" type="tel" placeholder="Ваш телефон">
+                  </div>
+                  <div class="form_field">
+                    <input class="form_input" type="email" placeholder="Ваше E-mail">
+                  </div>
+                  <div class="form_field">
+                    <div class="checkbox_wrap">
+                      <input class="form_checkbox styled" type="checkbox" id="checkPrivacy">
+                      <label class="form_label" for="checkPrivacy">Я соглашаюсь с политикой конфиденциальности</label>
+                    </div>
+                    <button class="form_submit" type="submit">Отправить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>

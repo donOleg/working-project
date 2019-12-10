@@ -1,5 +1,20 @@
 $(document).ready(function() {
 
+	// фиксация header
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 57) {
+					$('.header').addClass('fix');
+			} else {
+					$('.header').removeClass('fix');
+			}
+		});
+	});
+
+	ScrollReveal({ reset: true }).reveal('.headline', { delay: 300 });
+	ScrollReveal({ reset: true }).reveal('.tagline', { delay: 300 });
+	ScrollReveal({ reset: true }).reveal('.punchline', { delay: 300 });
+
 	$('.navbar-toggler').click(function(){
 		$('.sandwich').toggleClass('active');
 	});

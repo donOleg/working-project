@@ -23,19 +23,25 @@ footer.footer
 						a.wts_link(href="#") Создание сайта WAYTOSTART
 
 
-//- .modal.fade(tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")#orderMaster
-//- 	.modal-dialog(role="document")
-//- 		.modal-content
-//- 			.modal-header
-//- 				.modal-title Заказать мастер класс
-//- 				button(data-dismiss="modal" aria-label="Close").close
-//- 					span(aria-hidden="true")
-//- 			.modal-body
-//- 				form.modal-form
-//- 					.form-field
-//- 						input(type="text" name="userName" placeholder="Представьтесь, пожалуйста").form-input 
-//- 					.form-field.form-field_half
-//- 						input(type="tel" name="userPhone" placeholder="Телефон").form-input
-//- 						input(type="email" name="userMail" placeholder="E-mail").form-input
-//- 					p Нажимая кнопку «Отправить», я согласен на обработку моих персональных данных
+.modal.fade(tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")#orderCall
+	.modal-dialog(role="document")
+		.modal-content
+			.modal-header
+				.modal-title  Оставить заявку
+				button(data-dismiss="modal" aria-label="Close").close
+					span(aria-hidden="true")
+			.modal-body
+				.main_contacts
+					form
+						.form_field
+							input(type="text" placeholder="Ваше Имя").form_input
+						.form_field
+							input(type="tel" placeholder="Ваш телефон").form_input
+						.form_field
+							input(type="email" placeholder="Ваше E-mail").form_input
+						.form_field
+							.checkbox_wrap
+								input(type="checkbox")#checkPrivacy.form_checkbox.styled
+								label(for="checkPrivacy").form_label Я соглашаюсь с политикой конфиденциальности
+							button.form_submit(type="submit") Отправить
 

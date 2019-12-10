@@ -9,7 +9,14 @@
 .product_content {
   width: calc(100% - 350px);
   margin-bottom: 70px;
-  // padding-right: 17%;
+  
+  &.mod {
+    padding-right: 17%;
+
+    @include desktop_middle {
+      padding-right: 0;
+    }
+  }
 
   @include desktop_middle {
     width: 100%;
@@ -88,6 +95,10 @@
   background-repeat: no-repeat;
   background-size: contain;
 
+  &.light {
+    background-image: url("../img/hexagon_small_light.png");
+  }
+
   @include desktop_middle {
     width: 125px;
     height: 139px;
@@ -103,6 +114,14 @@
   width: 230px;
   height: 6px;
   background-color: #369F45;
+
+  &.light {
+    background-color: #6AC068;
+
+    &:after {
+      background-image: url("../img/hex_light.png");
+    }
+  }
 
   @include desktop_lg {
     width: 125px;

@@ -91,7 +91,8 @@ gulp.task('js', function(){
 		'node_modules/bootstrap/dist/js/bootstrap.min.js',
 		'node_modules/slick-carousel/slick/slick.min.js',
 		'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
-		'node_modules/chart.js/dist/Chart.min.js'
+		'node_modules/chart.js/dist/Chart.min.js',
+		'node_modules/scrollreveal/dist/scrollreveal.min.js'
 	])
 		.pipe(concat('libs.js'))
 		.pipe(uglify())
